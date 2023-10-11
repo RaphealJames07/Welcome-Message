@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome-Message</title>
+</head>
+<body>
+  
+  <div class="output"></div>
+  <div><span>Name:</span> <input type="text" value="" ></div>
+  <button class="button">Message</button>
+  <script>
+    const button = document.querySelector('button')
+    const output = document.querySelector(".output")
+    const myName = document.querySelector('input')
+    console.log(myName.value);
+    button.addEventListener("click", showMessage)
+    function showMessage (){
+      output.innerHTML = `<h1>Hello, welcome ${myName.value} </h1>`
+    }
+  </script>
+</body>
+</html>
